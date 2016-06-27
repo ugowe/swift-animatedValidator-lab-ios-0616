@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B136C021D216FBD004DC0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B136C011D216FBD004DC0F3 /* AppDelegate.swift */; };
+		1B136C071D216FBD004DC0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B136C051D216FBD004DC0F3 /* Main.storyboard */; };
+		1B136C091D216FBD004DC0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B136C081D216FBD004DC0F3 /* Assets.xcassets */; };
+		1B136C0C1D216FBD004DC0F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B136C0A1D216FBD004DC0F3 /* LaunchScreen.storyboard */; };
+		1B136C171D216FBD004DC0F3 /* animated_validator_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B136C161D216FBD004DC0F3 /* animated_validator_swiftTests.swift */; };
+		1B136C221D216FBD004DC0F3 /* animated_validator_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B136C211D216FBD004DC0F3 /* animated_validator_swiftUITests.swift */; };
+		1B136C721D217B96004DC0F3 /* ValidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B136C711D217B96004DC0F3 /* ValidatorViewController.swift */; };
+		1B136C761D217D69004DC0F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B136C751D217D69004DC0F3 /* Constants.swift */; };
+		614EF00AD7A44F8CE6EDDAEA /* Pods_animated_validator_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D506C47CB98E80EAEEBF92 /* Pods_animated_validator_swiftUITests.framework */; };
+		7252E457A7FC40F7F981CE72 /* Pods_animated_validator_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C122119BECAA60CD1470309 /* Pods_animated_validator_swiftTests.framework */; };
+		E113EED85F0875ED4DF0B697 /* Pods_animated_validator_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68667BCBEDC6B1DF663113C /* Pods_animated_validator_swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B136C131D216FBD004DC0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B136BF61D216FBD004DC0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B136BFD1D216FBD004DC0F3;
+			remoteInfo = "animated-validator-swift";
+		};
+		1B136C1E1D216FBD004DC0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B136BF61D216FBD004DC0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B136BFD1D216FBD004DC0F3;
+			remoteInfo = "animated-validator-swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B136BFE1D216FBD004DC0F3 /* animated-validator-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animated-validator-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B136C011D216FBD004DC0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B136C061D216FBD004DC0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B136C081D216FBD004DC0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B136C0B1D216FBD004DC0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B136C0D1D216FBD004DC0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B136C121D216FBD004DC0F3 /* animated-validator-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "animated-validator-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B136C161D216FBD004DC0F3 /* animated_validator_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animated_validator_swiftTests.swift; sourceTree = "<group>"; };
+		1B136C181D216FBD004DC0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B136C1D1D216FBD004DC0F3 /* animated-validator-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "animated-validator-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B136C211D216FBD004DC0F3 /* animated_validator_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animated_validator_swiftUITests.swift; sourceTree = "<group>"; };
+		1B136C231D216FBD004DC0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B136C711D217B96004DC0F3 /* ValidatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorViewController.swift; sourceTree = "<group>"; };
+		1B136C751D217D69004DC0F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BB9E8D93029FBCC28F0A37A /* Pods-animated-validator-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift.release.xcconfig"; sourceTree = "<group>"; };
+		34C3664E2AAEB1904B4C0B46 /* Pods-animated-validator-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftUITests/Pods-animated-validator-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D85F62ECEFEBCB151ED7869 /* Pods-animated-validator-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftUITests/Pods-animated-validator-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C122119BECAA60CD1470309 /* Pods_animated_validator_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animated_validator_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D506C47CB98E80EAEEBF92 /* Pods_animated_validator_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animated_validator_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0BDFC06A5EE781C104670E /* Pods-animated-validator-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		970BF69A64829DBB0AA9760A /* Pods-animated-validator-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D26BDFD20D9E704B03E90A1B /* Pods-animated-validator-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animated-validator-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E68667BCBEDC6B1DF663113C /* Pods_animated_validator_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animated_validator_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B136BFB1D216FBD004DC0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E113EED85F0875ED4DF0B697 /* Pods_animated_validator_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C0F1D216FBD004DC0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7252E457A7FC40F7F981CE72 /* Pods_animated_validator_swiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C1A1D216FBD004DC0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614EF00AD7A44F8CE6EDDAEA /* Pods_animated_validator_swiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B136BF51D216FBD004DC0F3 = {
+			isa = PBXGroup;
+			children = (
+				1B136C001D216FBD004DC0F3 /* animated-validator-swift */,
+				1B136C151D216FBD004DC0F3 /* animated-validator-swiftTests */,
+				1B136C201D216FBD004DC0F3 /* animated-validator-swiftUITests */,
+				1B136BFF1D216FBD004DC0F3 /* Products */,
+				29A0AC1857C4485E5378547D /* Pods */,
+				A3EFB1EA72B8BA7DEA215FFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B136BFF1D216FBD004DC0F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B136BFE1D216FBD004DC0F3 /* animated-validator-swift.app */,
+				1B136C121D216FBD004DC0F3 /* animated-validator-swiftTests.xctest */,
+				1B136C1D1D216FBD004DC0F3 /* animated-validator-swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B136C001D216FBD004DC0F3 /* animated-validator-swift */ = {
+			isa = PBXGroup;
+			children = (
+				1B136C011D216FBD004DC0F3 /* AppDelegate.swift */,
+				1B136C711D217B96004DC0F3 /* ValidatorViewController.swift */,
+				1B136C751D217D69004DC0F3 /* Constants.swift */,
+				1B136C051D216FBD004DC0F3 /* Main.storyboard */,
+				1B136C081D216FBD004DC0F3 /* Assets.xcassets */,
+				1B136C0A1D216FBD004DC0F3 /* LaunchScreen.storyboard */,
+				1B136C0D1D216FBD004DC0F3 /* Info.plist */,
+			);
+			path = "animated-validator-swift";
+			sourceTree = "<group>";
+		};
+		1B136C151D216FBD004DC0F3 /* animated-validator-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B136C161D216FBD004DC0F3 /* animated_validator_swiftTests.swift */,
+				1B136C181D216FBD004DC0F3 /* Info.plist */,
+			);
+			path = "animated-validator-swiftTests";
+			sourceTree = "<group>";
+		};
+		1B136C201D216FBD004DC0F3 /* animated-validator-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B136C211D216FBD004DC0F3 /* animated_validator_swiftUITests.swift */,
+				1B136C231D216FBD004DC0F3 /* Info.plist */,
+			);
+			path = "animated-validator-swiftUITests";
+			sourceTree = "<group>";
+		};
+		29A0AC1857C4485E5378547D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D26BDFD20D9E704B03E90A1B /* Pods-animated-validator-swift.debug.xcconfig */,
+				2BB9E8D93029FBCC28F0A37A /* Pods-animated-validator-swift.release.xcconfig */,
+				970BF69A64829DBB0AA9760A /* Pods-animated-validator-swiftTests.debug.xcconfig */,
+				8D0BDFC06A5EE781C104670E /* Pods-animated-validator-swiftTests.release.xcconfig */,
+				34C3664E2AAEB1904B4C0B46 /* Pods-animated-validator-swiftUITests.debug.xcconfig */,
+				3D85F62ECEFEBCB151ED7869 /* Pods-animated-validator-swiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3EFB1EA72B8BA7DEA215FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68667BCBEDC6B1DF663113C /* Pods_animated_validator_swift.framework */,
+				4C122119BECAA60CD1470309 /* Pods_animated_validator_swiftTests.framework */,
+				86D506C47CB98E80EAEEBF92 /* Pods_animated_validator_swiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B136BFD1D216FBD004DC0F3 /* animated-validator-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B136C261D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swift" */;
+			buildPhases = (
+				C970BDBD5D441E72716FDE22 /* 📦 Check Pods Manifest.lock */,
+				1B136BFA1D216FBD004DC0F3 /* Sources */,
+				1B136BFB1D216FBD004DC0F3 /* Frameworks */,
+				1B136BFC1D216FBD004DC0F3 /* Resources */,
+				DBEEFD50978E8DF3FEA4C2D3 /* 📦 Embed Pods Frameworks */,
+				F17CD3BBACA874860B6A5DC3 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "animated-validator-swift";
+			productName = "animated-validator-swift";
+			productReference = 1B136BFE1D216FBD004DC0F3 /* animated-validator-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B136C111D216FBD004DC0F3 /* animated-validator-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B136C291D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftTests" */;
+			buildPhases = (
+				AB4CFEC0095281FB507C0D5C /* 📦 Check Pods Manifest.lock */,
+				1B136C0E1D216FBD004DC0F3 /* Sources */,
+				1B136C0F1D216FBD004DC0F3 /* Frameworks */,
+				1B136C101D216FBD004DC0F3 /* Resources */,
+				ED456CBA8135FC278BBDC530 /* 📦 Embed Pods Frameworks */,
+				B62ED848D175F50DDC3F997C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B136C141D216FBD004DC0F3 /* PBXTargetDependency */,
+			);
+			name = "animated-validator-swiftTests";
+			productName = "animated-validator-swiftTests";
+			productReference = 1B136C121D216FBD004DC0F3 /* animated-validator-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B136C1C1D216FBD004DC0F3 /* animated-validator-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B136C2C1D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftUITests" */;
+			buildPhases = (
+				F6AB27D091FA8ABAE66CC34D /* 📦 Check Pods Manifest.lock */,
+				1B136C191D216FBD004DC0F3 /* Sources */,
+				1B136C1A1D216FBD004DC0F3 /* Frameworks */,
+				1B136C1B1D216FBD004DC0F3 /* Resources */,
+				3C0740508B180694FE61D255 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B136C1F1D216FBD004DC0F3 /* PBXTargetDependency */,
+			);
+			name = "animated-validator-swiftUITests";
+			productName = "animated-validator-swiftUITests";
+			productReference = 1B136C1D1D216FBD004DC0F3 /* animated-validator-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B136BF61D216FBD004DC0F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Flatiron School";
+				TargetAttributes = {
+					1B136BFD1D216FBD004DC0F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1B136C111D216FBD004DC0F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1B136BFD1D216FBD004DC0F3;
+					};
+					1B136C1C1D216FBD004DC0F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1B136BFD1D216FBD004DC0F3;
+					};
+				};
+			};
+			buildConfigurationList = 1B136BF91D216FBD004DC0F3 /* Build configuration list for PBXProject "animated-validator-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B136BF51D216FBD004DC0F3;
+			productRefGroup = 1B136BFF1D216FBD004DC0F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B136BFD1D216FBD004DC0F3 /* animated-validator-swift */,
+				1B136C111D216FBD004DC0F3 /* animated-validator-swiftTests */,
+				1B136C1C1D216FBD004DC0F3 /* animated-validator-swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B136BFC1D216FBD004DC0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B136C0C1D216FBD004DC0F3 /* LaunchScreen.storyboard in Resources */,
+				1B136C091D216FBD004DC0F3 /* Assets.xcassets in Resources */,
+				1B136C071D216FBD004DC0F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C101D216FBD004DC0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C1B1D216FBD004DC0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0740508B180694FE61D255 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftUITests/Pods-animated-validator-swiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4CFEC0095281FB507C0D5C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B62ED848D175F50DDC3F997C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C970BDBD5D441E72716FDE22 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBEEFD50978E8DF3FEA4C2D3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED456CBA8135FC278BBDC530 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swiftTests/Pods-animated-validator-swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17CD3BBACA874860B6A5DC3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-animated-validator-swift/Pods-animated-validator-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6AB27D091FA8ABAE66CC34D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B136BFA1D216FBD004DC0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B136C721D217B96004DC0F3 /* ValidatorViewController.swift in Sources */,
+				1B136C021D216FBD004DC0F3 /* AppDelegate.swift in Sources */,
+				1B136C761D217D69004DC0F3 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C0E1D216FBD004DC0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B136C171D216FBD004DC0F3 /* animated_validator_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B136C191D216FBD004DC0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B136C221D216FBD004DC0F3 /* animated_validator_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B136C141D216FBD004DC0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B136BFD1D216FBD004DC0F3 /* animated-validator-swift */;
+			targetProxy = 1B136C131D216FBD004DC0F3 /* PBXContainerItemProxy */;
+		};
+		1B136C1F1D216FBD004DC0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B136BFD1D216FBD004DC0F3 /* animated-validator-swift */;
+			targetProxy = 1B136C1E1D216FBD004DC0F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B136C051D216FBD004DC0F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B136C061D216FBD004DC0F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B136C0A1D216FBD004DC0F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B136C0B1D216FBD004DC0F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B136C241D216FBD004DC0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B136C251D216FBD004DC0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B136C271D216FBD004DC0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26BDFD20D9E704B03E90A1B /* Pods-animated-validator-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "animated-validator-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1B136C281D216FBD004DC0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB9E8D93029FBCC28F0A37A /* Pods-animated-validator-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "animated-validator-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1B136C2A1D216FBD004DC0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970BF69A64829DBB0AA9760A /* Pods-animated-validator-swiftTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "animated-validator-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animated-validator-swift.app/animated-validator-swift";
+			};
+			name = Debug;
+		};
+		1B136C2B1D216FBD004DC0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0BDFC06A5EE781C104670E /* Pods-animated-validator-swiftTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "animated-validator-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animated-validator-swift.app/animated-validator-swift";
+			};
+			name = Release;
+		};
+		1B136C2D1D216FBD004DC0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C3664E2AAEB1904B4C0B46 /* Pods-animated-validator-swiftUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "animated-validator-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "animated-validator-swift";
+			};
+			name = Debug;
+		};
+		1B136C2E1D216FBD004DC0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D85F62ECEFEBCB151ED7869 /* Pods-animated-validator-swiftUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "animated-validator-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.animated-validator-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "animated-validator-swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B136BF91D216FBD004DC0F3 /* Build configuration list for PBXProject "animated-validator-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B136C241D216FBD004DC0F3 /* Debug */,
+				1B136C251D216FBD004DC0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B136C261D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B136C271D216FBD004DC0F3 /* Debug */,
+				1B136C281D216FBD004DC0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B136C291D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B136C2A1D216FBD004DC0F3 /* Debug */,
+				1B136C2B1D216FBD004DC0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B136C2C1D216FBD004DC0F3 /* Build configuration list for PBXNativeTarget "animated-validator-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B136C2D1D216FBD004DC0F3 /* Debug */,
+				1B136C2E1D216FBD004DC0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B136BF61D216FBD004DC0F3 /* Project object */;
+}
