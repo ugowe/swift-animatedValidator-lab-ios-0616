@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ValidatorViewController: UIViewController {
+class ValidatorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailConfirmationTextField: UITextField!

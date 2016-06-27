@@ -12,12 +12,13 @@ There are 5 textfields simulating a user sign up page. Your goal is to
 
 ## Instructions
 
-  1. The fields (listed below) have already been added to your Storyboard. The submit button will be disabled by default thanks to a line at the end of `viewDidLoad`.
+  1. The fields (listed below) have already been added to your Storyboard. The submit button will be disabled by default thanks to a line at the end of `viewDidLoad()`.
   3. Validate your different fields using the criteria listed below. If someone "leaves" the field with an invalid value, make the field flash red and pulse (quickly grow bigger/smaller).
-   - There are two ways to be notified when the user exits a text field: the UITextFieldDelegate method `textFieldDidEndEditing`, or you can wire up an IBAction from the field and select the "Editing Did End" event. Think about which approach works best for you. 
+   - There are two ways to be notified when the user exits a text field: the UITextFieldDelegate method `textFieldDidEndEditing(_:)`, or you can wire up an IBAction from the field and select the "Editing Did End" event. Think about which approach works best for you. 
   4. As soon as all fields are valid, make the submit button animate in from the bottom. 
       - To be notified when the text inside a textfield changes, wire up an action to the field's "Editing Changed" event (*not* "Value Changed", confusingly).
-      - if you're a UITextFieldDelegate fan, there is only `textField:shouldChangeCharactersInRange:replacementString:`. Be aware though, this method is more complicated than just "editing changed"!
+      - if you're a UITextFieldDelegate fan, there is only `
+textField(_:shouldChangeCharactersInRange:replacementString:)`. Be aware though, this method is more complicated than just "editing changed"!
   5. Set up AutoLayout so the form looks good on all phones in portrait. Don't worry about horizontal for now, that will be extra credit.
 
 ### The Fields (all are required)
