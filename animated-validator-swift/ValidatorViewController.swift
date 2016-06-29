@@ -17,6 +17,12 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmTextField: UITextField!
     
+    @IBOutlet weak var submitButtonCenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var emailWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var emailConfirmWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var phoneWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var passwordWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var passwordConfirmWidthConstraint: NSLayoutConstraint!
     
     
     override func viewDidLoad() {
@@ -58,23 +64,24 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         
         if textField === self.emailTextField {
             
-            if !goodText || !goodEmail {
+            if goodText && goodEmail {
                 
-                textField.backgroundColor = UIColor.redColor()
+                self.emailTextField.backgroundColor = UIColor.whiteColor()
                 
             }else{
                 
-                textField.backgroundColor = UIColor.whiteColor()
+                pulseTextField(self.emailTextField)
+                
             }
             
         }else if textField === self.emailConfirmationTextField{
             
-            if goodEmailConfirm{
+            if goodEmailConfirm && goodEmail{
                 
                 self.emailConfirmationTextField.backgroundColor = UIColor.whiteColor()
             }else{
+                pulseTextField(self.emailConfirmationTextField)
                 
-                self.emailConfirmationTextField.backgroundColor = UIColor.redColor()
             }
         }else if textField === self.phoneTextField{
             
@@ -82,7 +89,7 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
                 
                 self.phoneTextField.backgroundColor = UIColor.whiteColor()
             }else{
-                self.phoneTextField.backgroundColor = UIColor.redColor()
+                pulseTextField(self.phoneTextField)
             }
             
         }else if textField === self.passwordTextField {
@@ -92,16 +99,16 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
                 self.passwordTextField.backgroundColor = UIColor.whiteColor()
             }else{
                 
-                self.passwordTextField.backgroundColor = UIColor.redColor()
+                pulseTextField(self.passwordTextField)
             }
         }else if textField === self.passwordConfirmTextField{
             
-            if goodPasswordConfirm{
+            if goodPasswordConfirm && goodPassword{
                 
                 self.passwordConfirmTextField.backgroundColor = UIColor.whiteColor()
             }else{
                 
-                self.passwordConfirmTextField.backgroundColor = UIColor.redColor()
+                pulseTextField(self.passwordConfirmTextField)
             }
         }
         
@@ -115,12 +122,31 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         
         UIView.animateWithDuration(1) {
             
-            self.submitButton.centerYAnchor
-            self.submitButton.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor, constant: -45).active = true
+            self.submitButtonCenterYConstraint.constant = -45
+        
             self.view.layoutIfNeeded()
             
         }
         
     }
-  
+    
+    func pulseTextField(textField: UITextField) {
+        
+        let savedText = textField.text
+        textField.text = nil
+        
+        UIView.animateKeyframesWithDuration(0.25, delay: 0.0, options: [.Repeat, .Autoreverse], animations: {
+            
+            UIView.setAnimationRepeatCount(3.0)
+            textField.transform = CGAffineTransformMakeScale(0.98, 0.98)
+            textField.backgroundColor = UIColor.redColor()
+            self.view.layoutIfNeeded()
+            
+            }) { (true) in
+                textField.transform = CGAffineTransformMakeScale(1, 1)
+                textField.text = savedText
+        }
+
+    }
+    
 }
