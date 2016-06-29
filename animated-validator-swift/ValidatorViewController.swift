@@ -57,7 +57,7 @@ class ValidatorViewController: UIViewController, UITextFieldDelegate {
         let goodText = textField.text!.characters.count > 0
         let goodEmail = self.emailTextField.text!.containsString("@") && self.emailTextField.text!.containsString(".")
         let goodEmailConfirm = self.emailConfirmationTextField.text == self.emailTextField.text && self.emailConfirmationTextField.text!.characters.count > 0
-        let goodPhone = self.phoneTextField.text?.characters.count == 7
+        let goodPhone = self.phoneTextField.text?.characters.count >= 7
         let goodPassword = self.passwordTextField.text?.characters.count >= 6
         let goodPasswordConfirm = self.passwordConfirmTextField.text == self.passwordTextField.text && self.passwordConfirmTextField.text?.characters.count > 0
         

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Constants: NSObject {
+struct Constants {
     
     static let EMAILTEXTFIELD = "emailTextField"
     static let EMAILCONFIRMTEXTFIELD = "emailConfirmTextField";
